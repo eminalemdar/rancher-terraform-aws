@@ -2,7 +2,7 @@
 
 With these Terraform configuration files you can create **Kubernetes** clusters on **AWS** using both **EC2** and **EKS** options with **Rancher**.
 
-> Before using these configurations files, you need to have a ***Rancher*** deployed in your preffered environment and you need to configure the network connection requirements between your **Rancher Server** and **AWS**.
+> Before using these configurations files, you need to have ***Rancher*** deployed in your preffered environment and you need to configure the network connection requirements between your **Rancher Server** and **AWS**.
 
 ## File Structure
 
