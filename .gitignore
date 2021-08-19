@@ -1,0 +1,6 @@
+
+## Added Terraform files to gitignore.
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup

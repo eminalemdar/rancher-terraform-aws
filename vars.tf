@@ -1,61 +1,79 @@
 variable "ACCESS_KEY" {
   description = "AWS Access Key"
   type        = string
-  default     = "AccessKey" #Replace
+  default     = "" #Replace
 }
 
 variable "SECRET_ACCESS_KEY" {
   description = "AWS Secret Access Key"
   type        = string
-  default     = "SecretAccessKey" #Replace
+  default     = "" #Replace
 }
 
 variable "rancher_api_url" {
   description = "Rancher API Url"
   type        = string
-  default     = "https://........" #Replace
+  default     = "" #Replace
 }
 
 variable "rancher2_access_key" {
   description = "Rancher2 Access Key"
   type        = string
-  default     = "token-xxxx" #Replace
+  default     = "" #Replace
 }
 
 variable "rancher2_secret_key" {
   description = "Rancher2 Secret Key"
   type        = string
-  default     = "xxxxxx" #Replace
+  default     = "" #Replace
 }
 
 variable "ami" {
   description = "an EC2 AMI Id"
   type        = string
-  default     = "ami-xxxx" #Replace
+  default     = "" #Replace
 }
 
 variable "region" {
   description = "AWS Region"
   type        = string
-  default     = "eu-west-1"
+  default     = "eu-west-1" #Replace
+}
+
+variable "security_group_id" {
+  description = "Security Group id for EKS Clusters"
+  type        = string
+  default     = "" #Replace
 }
 
 variable "security_group_name" {
-  description = "Security Group name"
+  description = "Security Group name for EC2 Clusters"
   type        = string
-  default     = "xxxx" #Replace
+  default     = "" #Replace
 }
 
-variable "subnet_id" {
+variable "subnet_id_a" {
   description = "VPC Subnet ID"
   type        = string
-  default     = "subnet-xxxx" #Replace
+  default     = "" #Replace
+}
+
+variable "subnet_id_b" {
+  description = "VPC Subnet ID"
+  type        = string
+  default     = "" #Replace
+}
+
+variable "subnet_id_c" {
+  description = "VPC Subnet ID"
+  type        = string
+  default     = "" #Replace
 }
 
 variable "vpc_id" {
   description = "VPC ID"
   type        = string
-  default     = "vpc-xxxx" #Replace
+  default     = "" #Replace
 }
 
 variable "az" {
@@ -76,8 +94,8 @@ variable "worker_instance_type" {
   default     = "" #Replace
 }
 
-variable "key_name" {
-  description = "EC2 Key Pair Name"
+variable "docker_install_sh" {
+  description = "Rancher Docker install script URL 19.03 version"
   type        = string
-  default     = "xxxx" #Replace
+  default     = "https://releases.rancher.com/install-docker/19.03.sh"
 }

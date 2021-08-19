@@ -23,9 +23,9 @@ resource "rancher2_node_pool" "control_plane_pool" {
   worker           = false
 }
 
-resource "rancher2_node_pool" "control_plane_pool" {
+resource "rancher2_node_pool" "worker_pool" {
   cluster_id       = rancher2_cluster.ec2_cluster.id
-  name             = "worker_nodes"
+  name             = "worker-nodes"
   hostname_prefix  = "worker-"
   node_template_id = rancher2_node_template.worker.id
   quantity         = 3
