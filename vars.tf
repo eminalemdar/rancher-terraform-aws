@@ -37,7 +37,7 @@ variable "ami" {
 variable "region" {
   description = "AWS Region"
   type        = string
-  default     = "eu-west-1" #Replace
+  default     = "" #Replace
 }
 
 variable "security_group_id" {
@@ -95,7 +95,7 @@ variable "worker_instance_type" {
 }
 
 variable "docker_install_sh" {
-  description = "Rancher Docker install script URL 19.03 version"
+  description = "Rancher Docker install script URL 20.10 version"
   type        = string
-  default     = "https://releases.rancher.com/install-docker/19.03.sh"
+  default     = "https://releases.rancher.com/install-docker/20.10.sh"
 }
